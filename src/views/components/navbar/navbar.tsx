@@ -41,63 +41,79 @@ const Navbar = (props: props) => {
   };
 
   return (
-    <div
-      style={{
-        height: Width <= 768 ? 70 : '20vh',
-        display: 'flex',
-        alignItems: 'center',
-        flexWrap: 'nowrap',
-      }}
-    >
+    <div>
+      <div style={{ display: 'none' }}>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, nostrum maiores distinctio
+        vero autem pariatur fuga nobis sit cupiditate quidem in id sunt natus neque fugit libero est
+        quaerat atque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique neque
+        voluptate eos quaerat laboriosam unde iusto, nisi quam amet impedit necessitatibus, tempora
+        doloribus est, cupiditate saepe aliquam! Ipsam, nisi quas!
+      </div>
       <div
         style={{
-          display: 'flex',
-          width: '100%',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'nowrap',
+          position: 'sticky',
+          top: 0,
         }}
       >
-        <div>
-          <button
-            style={{
-              color: '#2f77ad',
-              fontSize: 30,
-              fontWeight: 600,
-              background: 'inherit',
-            }}
-          >
-            Mojahidul Islam
-          </button>
-        </div>
         <div
           style={{
+            height: Width <= 768 ? 70 : '20vh',
             display: 'flex',
-            justifyContent: 'center',
             alignItems: 'center',
             flexWrap: 'nowrap',
-            gap: 40,
           }}
         >
-          <div style={{ cursor: 'pointer' }} onClick={changeTheme}>
-            {darkMode ? (
-              <WbSunnySharpIcon sx={{ color: theme.color }} />
-            ) : (
-              <DarkModeSharpIcon sx={{ color: theme.color }} />
-            )}
-          </div>
-          <div style={{ color: 'black' }}>
+          <div
+            style={{
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexWrap: 'nowrap',
+            }}
+          >
+            <div>
+              <button
+                style={{
+                  color: '#2f77ad',
+                  fontSize: 30,
+                  fontWeight: 600,
+                  background: 'inherit',
+                }}
+              >
+                Mojahidul Islam
+              </button>
+            </div>
             <div
               style={{
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexWrap: 'nowrap',
-                cursor: 'pointer',
+                gap: 40,
               }}
             >
-              <RssFeedSharpIcon sx={{ color: theme.color }} />
-              <div style={{ color: theme.color }}>Blog</div>
+              <div style={{ cursor: 'pointer' }} onClick={changeTheme}>
+                {darkMode ? (
+                  <WbSunnySharpIcon sx={{ color: theme.color }} />
+                ) : (
+                  <DarkModeSharpIcon sx={{ color: theme.color }} />
+                )}
+              </div>
+              <div style={{ color: 'black' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    flexWrap: 'nowrap',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <RssFeedSharpIcon sx={{ color: theme.color }} />
+                  <div style={{ color: theme.color }}>Blog</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,20 @@
+/** @format */
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.textTitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin: 8px 0;
+  font-size: 18;
+  padding: 2px 0;
+}
+.tags {
+  padding: 2px 10px;
+  border-radius: 3px;
+  /* font-weight: 600; */
+}

@@ -2,13 +2,14 @@
 
 import react from 'react';
 import { Theme } from 'model/varable';
+import styles from 'views/pages/homePage/homePage.module.css';
 interface props {
   theme: Theme;
 }
 const MoreAboutMe = ({ theme }: props) => {
   return (
     <div>
-      <p style={{ color: theme.color, fontSize: 26, fontWeight: 600, marginBottom: 30 }}>
+      <p style={{ color: theme.color }} className={styles.title}>
         More about me
       </p>
       <div
@@ -16,6 +17,7 @@ const MoreAboutMe = ({ theme }: props) => {
           display: 'flex',
           alignItems: 'center',
           flexWrap: 'nowrap',
+          justifyContent: 'flex-start',
           gap: 40,
         }}
       >
@@ -33,15 +35,16 @@ const MoreAboutMe = ({ theme }: props) => {
         <div
           style={{
             display: 'flex',
-            alignItems: 'center',
+            alignItems: 'flex-start',
             flexWrap: 'nowrap',
             gap: 20,
             flexDirection: 'column',
+            width: '50%',
           }}
         >
           <div>
             <div style={{ borderTop: '2px solid green', width: 60 }}></div>
-            <p style={{ margin: '4 0', fontSize: 18 }}> Things I like</p>
+            <p style={{ margin: '4 0', fontSize: 18, color: theme.color }}> Things I like</p>
             <div
               style={{
                 display: 'flex',
@@ -129,7 +132,10 @@ const MoreAboutMe = ({ theme }: props) => {
           </div>
           <div>
             <div style={{ borderTop: '2px solid green', width: 60 }}></div>
-            <p style={{ margin: '8 0', fontSize: 18, padding: '2px 0' }}> Things I like</p>
+            <p className={styles.textTitle} style={{ color: theme.color }}>
+              {' '}
+              Things I like
+            </p>
             <div
               style={{
                 display: 'flex',
