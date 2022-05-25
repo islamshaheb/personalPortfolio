@@ -5,15 +5,17 @@ import { Theme } from 'model/varable';
 import LandingSection from 'views/components/landIngSection/landingSection';
 import MoreAboutMe from 'views/components/moreAboutMe/moreAboutMe';
 import SkillsAndValues from 'views/components/skillsAndValues/skillsAndValues';
+import Projects from 'views/components/projects/projects';
 interface props {
   theme: Theme;
 }
 const HomePage = ({ theme }: props) => {
   return (
     <>
-      <LandingSection theme={theme} />
-      <MoreAboutMe theme={theme} />
-      <SkillsAndValues />
+      {/* <LandingSection theme={theme} /> */}
+      {/* <MoreAboutMe theme={theme} /> */}
+      {/* <SkillsAndValues /> */}
+      <Projects />
     </>
   );
 };
