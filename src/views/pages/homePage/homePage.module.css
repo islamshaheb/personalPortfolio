@@ -1,7 +1,7 @@
 /** @format */
 
 .title {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -31,11 +31,30 @@
   /* box-shadow: white 0px 54px 55px, white 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px,
     white 0px -3px 5px; */
 
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
 
 .boxDark {
   padding: 20px;
   max-width: 365px;
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 5px 15px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 5px;
+}
+
+.expBoxLight {
+  padding: 20px;
+  /* box-shadow: white 0px 54px 55px, white 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px,
+    white 0px -3px 5px; */
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+.expBoxDark {
+  padding: 20px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 5px;
+}
+
+.companyName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #359dfd;
 }
