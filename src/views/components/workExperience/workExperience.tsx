@@ -26,9 +26,12 @@ const WorkExperience = () => {
   const currentExpTime = getMonthDifference(new Date('2021-09-01'), new Date());
   return (
     <div style={{ display: 'flex', gap: '5%', flexWrap: 'wrap', width: '100%' }}>
-      <p style={{ color: theme.color, width: '30%' }} className={styles.title}>
-        Work experience
-      </p>
+      <div style={{ color: theme.color, width: '30%' }}>
+        <p style={{ color: theme.color, marginBottom: 5 }} className={styles.title}>
+          Work experience
+        </p>
+        <p style={{ color: theme.color }}>List of companies I worked for.</p>
+      </div>
 
       <div
         style={{

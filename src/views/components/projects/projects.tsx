@@ -9,9 +9,12 @@ const Projects = () => {
   const theme = useContext(ThemeContext);
   return (
     <div style={{ display: 'flex', gap: '5%', flexWrap: 'wrap' }}>
-      <p style={{ color: theme.color, width: '30%' }} className={styles.title}>
-        Projects
-      </p>
+      <div style={{ color: theme.color, width: '30%' }}>
+        <p style={{ color: theme.color, marginBottom: 5 }} className={styles.title}>
+          Projects
+        </p>
+        <p style={{ color: theme.color }}>Lists of my pet project I have done for myself.</p>
+      </div>
 
       <div
         style={{

@@ -7,18 +7,20 @@ import MoreAboutMe from 'views/components/moreAboutMe/moreAboutMe';
 import SkillsAndValues from 'views/components/skillsAndValues/skillsAndValues';
 import Projects from 'views/components/projects/projects';
 import WorkExperience from 'views/components/workExperience/workExperience';
+import Education from 'views/components/education/education';
 interface props {
   theme: Theme;
 }
 const HomePage = ({ theme }: props) => {
   return (
     <>
-      <LandingSection theme={theme} />
+      {/* <LandingSection theme={theme} /> */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 60, marginBottom: 50 }}>
-        <MoreAboutMe theme={theme} />
+        {/* <MoreAboutMe theme={theme} />
         <SkillsAndValues />
-        <Projects />
-        <WorkExperience />
+        <Projects /> */}
+        {/* <WorkExperience /> */}
+        <Education />
       </div>
     </>
   );
