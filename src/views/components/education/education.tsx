@@ -9,9 +9,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 // import { ReactComponent as ArrowRightIcon } from 'assets/ArrowRightIcon.svg';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import useWindowDimensions from '../useWindowDimensions/useWindowDimensions';
 
 const Education = () => {
   const [showingMore, setShowMore] = useState<boolean>(false);
+  const { Width } = useWindowDimensions();
+
   const theme = useContext(ThemeContext);
   const getMonthDifference = (startDate: Date, endDate: Date): number => {
     return (
@@ -26,11 +29,13 @@ const Education = () => {
   const currentExpTime = getMonthDifference(new Date('2021-09-01'), new Date());
   return (
     <div style={{ display: 'flex', gap: '5%', flexWrap: 'wrap', width: '100%' }}>
-      <div style={{ color: theme.color, width: '30%' }}>
+      <div style={{ color: theme.color, width: Width > 768 ? '30%' : '100%' }}>
         <p style={{ color: theme.color, marginBottom: 5 }} className={styles.title}>
           Education
         </p>
-        <p style={{ color: theme.color }}>Educational background.</p>
+        <p className={styles.skillDiv} style={{ color: theme.color }}>
+          Educational background.
+        </p>
       </div>
 
       <div
@@ -39,7 +44,7 @@ const Education = () => {
           gap: 25,
           flexWrap: 'wrap',
           flexDirection: 'column',
-          width: '65%',
+          width: Width > 768 ? '65%' : '100%',
         }}
       >
         <div

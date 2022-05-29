@@ -18,7 +18,10 @@
   border-radius: 3px;
   /* font-weight: 600; */
 }
-
+.things {
+  margin: 4px 0;
+  font-size: 18px;
+}
 .projectName {
   font-size: 22px;
   font-weight: 600;
@@ -57,4 +60,33 @@
   font-size: 18px;
   font-weight: 600;
   color: #359dfd;
+}
+.allPara {
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .textTitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .title,
+  .skillDiv {
+    text-align: center;
+  }
+  .boxLight,
+  .boxDark,
+  .expBoxDark,
+  .expBoxLight {
+    max-width: 100%;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .projectName {
+    font-size: 18px;
+  }
+  .allParax {
+    font-size: 14px;
+    /* background-color: red; */
+  }
 }

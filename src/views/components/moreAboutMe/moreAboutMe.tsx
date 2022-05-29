@@ -3,25 +3,37 @@
 import react from 'react';
 import { Theme } from 'model/varable';
 import styles from 'views/pages/homePage/homePage.module.css';
+import useWindowDimensions from '../useWindowDimensions/useWindowDimensions';
 interface props {
   theme: Theme;
 }
 const MoreAboutMe = ({ theme }: props) => {
+  const { Width } = useWindowDimensions();
+
   return (
     <div>
-      <p style={{ color: theme.color }} className={styles.title}>
+      <p
+        style={{ color: theme.color, textAlign: Width > 768 ? 'left' : 'center' }}
+        className={styles.title}
+      >
         More about me
       </p>
       <div
         style={{
           display: 'flex',
           alignItems: 'center',
-          flexWrap: 'nowrap',
+          flexWrap: 'wrap',
           justifyContent: 'flex-start',
           gap: 40,
         }}
       >
-        <div style={{ width: '50%', color: theme.color }}>
+        <div
+          style={{
+            width: Width > 768 ? 'calc(50% - 42px) ' : '100%',
+            color: theme.color,
+            textAlign: 'justify',
+          }}
+        >
           I'm a programmer and lifelong learner. I love writing software and I am grateful that I
           get to make a living doing so. I led my team to win 5 international software competitions
           during college. I find it extremity enjoyable to solve a real-world problem by writing
@@ -35,122 +47,42 @@ const MoreAboutMe = ({ theme }: props) => {
         <div
           style={{
             display: 'flex',
-            alignItems: 'flex-start',
+            alignItems: Width > 768 ? 'flex-start' : 'center',
             flexWrap: 'nowrap',
             gap: 20,
             flexDirection: 'column',
-            width: '50%',
+            justifyContent: 'center',
+            width: Width > 768 ? '50%' : '100%',
           }}
         >
           <div>
-            <div style={{ borderTop: '2px solid green', width: 60 }}></div>
-            <p style={{ margin: '4 0', fontSize: 18, color: theme.color }}> Things I like</p>
             <div
               style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                flexWrap: 'nowrap',
-                gap: 10,
+                borderTop: '2px solid green',
+                width: 60,
+                margin: Width <= 786 ? '0 auto' : 'inherit',
               }}
-            >
-              <div
-                style={{
-                  background: '#597F51',
-                  padding: '4px 10px',
-                  borderRadius: 3,
-                  color: '#F5F6F6',
-                }}
-              >
-                Hello There
-              </div>
-              <div
-                style={{
-                  background: '#597F51',
-                  padding: '4px 10px',
-                  borderRadius: 3,
-                  color: '#F5F6F6',
-                }}
-              >
-                Hello There
-              </div>
-              <div
-                style={{
-                  background: '#597F51',
-                  padding: '4px 10px',
-                  borderRadius: 3,
-                  color: '#F5F6F6',
-                }}
-              >
-                Hello There
-              </div>
-            </div>
-          </div>
-          <div>
-            <div style={{ borderTop: '2px solid green', width: 60 }}></div>
-            <p style={{ margin: '4 0', fontSize: 18 }}> Things I like</p>
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                flexWrap: 'nowrap',
-                gap: 10,
-              }}
-            >
-              <div
-                style={{
-                  background: '#597F51',
-                  padding: '2px 10px',
-                  borderRadius: 3,
-                  color: '#171F25',
-                }}
-              >
-                Hello There
-              </div>
-              <div
-                style={{
-                  background: '#597F51',
-                  padding: '2px 10px',
-                  borderRadius: 3,
-                  color: '#171F25',
-                }}
-              >
-                Hello There
-              </div>
-              <div
-                style={{
-                  background: '#597F51',
-                  padding: '2px 10px',
-                  borderRadius: 3,
-                  color: '#171F25',
-                }}
-              >
-                Hello There
-              </div>
-            </div>
-          </div>
-          <div>
-            <div style={{ borderTop: '2px solid green', width: 60 }}></div>
-            <p className={styles.textTitle} style={{ color: theme.color }}>
+              // className={styles.textTitle}
+            ></div>
+            <p style={{ color: theme.color }} className={styles.textTitle}>
               {' '}
               Things I like
             </p>
             <div
               style={{
                 display: 'flex',
-                justifyContent: 'space-between',
+                justifyContent: Width > 769 ? 'flex-start' : 'center',
                 alignItems: 'center',
-                flexWrap: 'nowrap',
+                flexWrap: 'wrap',
                 gap: 10,
               }}
             >
               <div
                 style={{
                   background: '#597F51',
-                  padding: '2px 10px',
+                  padding: '4px 10px',
                   borderRadius: 3,
-                  color: '#171F25',
+                  color: '#F5F6F6',
                 }}
               >
                 Hello There
@@ -158,9 +90,9 @@ const MoreAboutMe = ({ theme }: props) => {
               <div
                 style={{
                   background: '#597F51',
-                  padding: '2px 10px',
+                  padding: '4px 10px',
                   borderRadius: 3,
-                  color: '#171F25',
+                  color: '#F5F6F6',
                 }}
               >
                 Hello There
@@ -168,9 +100,39 @@ const MoreAboutMe = ({ theme }: props) => {
               <div
                 style={{
                   background: '#597F51',
-                  padding: '2px 10px',
+                  padding: '4px 10px',
                   borderRadius: 3,
-                  color: '#171F25',
+                  color: '#F5F6F6',
+                }}
+              >
+                Hello There
+              </div>
+              <div
+                style={{
+                  background: '#597F51',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: '#F5F6F6',
+                }}
+              >
+                Hello There
+              </div>
+              <div
+                style={{
+                  background: '#597F51',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: '#F5F6F6',
+                }}
+              >
+                Hello There
+              </div>
+              <div
+                style={{
+                  background: '#597F51',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: '#F5F6F6',
                 }}
               >
                 Hello There

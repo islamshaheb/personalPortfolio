@@ -5,15 +5,20 @@ import { ThemeContext } from 'App';
 import styles from 'views/pages/homePage/homePage.module.css';
 import profile from 'assets/profile.jpg';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import useWindowDimensions from '../useWindowDimensions/useWindowDimensions';
 const Projects = () => {
   const theme = useContext(ThemeContext);
+  const { Width } = useWindowDimensions();
+
   return (
     <div style={{ display: 'flex', gap: '5%', flexWrap: 'wrap' }}>
-      <div style={{ color: theme.color, width: '30%' }}>
+      <div style={{ color: theme.color, width: Width > 768 ? '30%' : '100%' }}>
         <p style={{ color: theme.color, marginBottom: 5 }} className={styles.title}>
           Projects
         </p>
-        <p style={{ color: theme.color }}>Lists of my pet project I have done for myself.</p>
+        <p className={styles.skillDiv} style={{ color: theme.color }}>
+          Lists of my pet project I have done for myself.
+        </p>
       </div>
 
       <div
@@ -22,7 +27,7 @@ const Projects = () => {
           gap: 25,
           flexWrap: 'wrap',
           justifyContent: 'space-between',
-          width: '65%',
+          width: Width > 768 ? '65%' : '100%',
         }}
       >
         <div

@@ -90,7 +90,7 @@ const Navbar = (props: props) => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexWrap: 'nowrap',
-                gap: 40,
+                gap: Width <= 550 ? 15 : 40,
               }}
             >
               <div style={{ cursor: 'pointer' }} onClick={changeTheme}>

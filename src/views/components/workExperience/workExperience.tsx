@@ -10,9 +10,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import { spawn } from 'child_process';
+import useWindowDimensions from '../useWindowDimensions/useWindowDimensions';
 const WorkExperience = () => {
   const [showingMore, setShowMore] = useState<boolean>(false);
   const theme = useContext(ThemeContext);
+  const { Width } = useWindowDimensions();
+
   const getMonthDifference = (startDate: Date, endDate: Date): number => {
     return (
       endDate.getMonth() -
@@ -26,11 +29,13 @@ const WorkExperience = () => {
   const currentExpTime = getMonthDifference(new Date('2021-09-01'), new Date());
   return (
     <div style={{ display: 'flex', gap: '5%', flexWrap: 'wrap', width: '100%' }}>
-      <div style={{ color: theme.color, width: '30%' }}>
+      <div style={{ color: theme.color, width: Width > 768 ? '30%' : '100%' }}>
         <p style={{ color: theme.color, marginBottom: 5 }} className={styles.title}>
           Work experience
         </p>
-        <p style={{ color: theme.color }}>List of companies I worked for.</p>
+        <p className={styles.skillDiv} style={{ color: theme.color }}>
+          List of companies I worked for.
+        </p>
       </div>
 
       <div
@@ -39,7 +44,7 @@ const WorkExperience = () => {
           gap: 25,
           flexWrap: 'wrap',
           flexDirection: 'column',
-          width: '65%',
+          width: Width > 768 ? '65%' : '100%',
         }}
       >
         <div
@@ -101,7 +106,7 @@ const WorkExperience = () => {
             Live
           </a>
 
-          <p style={{ color: theme.color, textAlign: 'justify' }}>
+          <p className={styles.allPara} style={{ color: theme.color, textAlign: 'justify' }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
             cupiditate quae, ducimus totam, ea alias impedit iusto saepe labore in iure incidunt,
