@@ -73,6 +73,9 @@
   .skillDiv {
     text-align: center;
   }
+  .skillDiv {
+    margin-bottom: 30px;
+  }
   .boxLight,
   .boxDark,
   .expBoxDark,

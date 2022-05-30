@@ -70,8 +70,8 @@ const Contests = () => {
                 gap: 5,
               }}
             >
-              <p style={{ color: theme.dark ? '#B69473' : '#443A30', fontWeight: 700 }}>
-                Total problem solve{' '}
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                Total problem solve:
               </p>
               <p style={{ color: theme.color }}>400</p>
             </div>
@@ -83,8 +83,8 @@ const Contests = () => {
                 gap: 5,
               }}
             >
-              <p style={{ color: theme.dark ? '#B69473' : '#443A30', fontWeight: 700 }}>
-                Participated in contests
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                Participated in contests:
               </p>
               <p style={{ color: theme.color }}>100</p>
             </div>
@@ -122,8 +122,8 @@ const Contests = () => {
                 gap: 5,
               }}
             >
-              <p style={{ color: theme.dark ? '#B69473' : '#443A30', fontWeight: 700 }}>
-                Total problem solve{' '}
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                Total problem solve:
               </p>
               <p style={{ color: theme.color }}>400</p>
             </div>
@@ -135,8 +135,8 @@ const Contests = () => {
                 gap: 5,
               }}
             >
-              <p style={{ color: theme.dark ? '#B69473' : '#443A30', fontWeight: 700 }}>
-                Participated in contests
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                Participated in contests:
               </p>
               <p style={{ color: theme.color }}>100</p>
             </div>
