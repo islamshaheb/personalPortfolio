@@ -34,15 +34,13 @@ const MoreAboutMe = ({ theme }: props) => {
             textAlign: 'justify',
           }}
         >
-          I'm a programmer and lifelong learner. I love writing software and I am grateful that I
-          get to make a living doing so. I led my team to win 5 international software competitions
-          during college. I find it extremity enjoyable to solve a real-world problem by writing
-          software. So I still take some time out, every year, to participate in top software
-          competitions around the world. Like everyone else I too have to keep up, and I believe
-          this helps me a lot with that. Recently I have been writing open source software to help
-          nonprofit organizations. My collaborative mapping software written for the Jane Goodall
-          Institute won the DocuSign Good Code award. I feel like I'm a jack of all trades and
-          master of a few. ‘Roll up your sleeves and get the job done’ - is my motto
+          I am a self-motivated quick learner. I have good analytical and problem-solving skills. I
+          have the ability to work with a team and also have enough experience to work
+          independently. <br /> <br />I started my career as a backend based full-stack developer.
+          For last couple of month I'm working on front-end. It makes me a perfect full-stack
+          developer. I'm also working on cross-platform app development.
+          <br /> <br /> Recently I've found my keen interest on devops. I'm learning Jenkins, AWS,
+          Docker and Nginx. Deployed multiple site on EC2 .
         </div>
         <div
           style={{
@@ -62,7 +60,6 @@ const MoreAboutMe = ({ theme }: props) => {
                 width: 60,
                 margin: Width <= 786 ? '0 auto' : 'inherit',
               }}
-              // className={styles.textTitle}
             ></div>
             <p style={{ color: theme.color }} className={styles.textTitle}>
               {' '}
@@ -85,7 +82,7 @@ const MoreAboutMe = ({ theme }: props) => {
                   color: '#F5F6F6',
                 }}
               >
-                Hello There
+                Movie
               </div>
               <div
                 style={{
@@ -95,7 +92,7 @@ const MoreAboutMe = ({ theme }: props) => {
                   color: '#F5F6F6',
                 }}
               >
-                Hello There
+                Cricket
               </div>
               <div
                 style={{
@@ -105,7 +102,7 @@ const MoreAboutMe = ({ theme }: props) => {
                   color: '#F5F6F6',
                 }}
               >
-                Hello There
+                Football
               </div>
               <div
                 style={{
@@ -115,7 +112,7 @@ const MoreAboutMe = ({ theme }: props) => {
                   color: '#F5F6F6',
                 }}
               >
-                Hello There
+                Gardening
               </div>
               <div
                 style={{
@@ -125,17 +122,144 @@ const MoreAboutMe = ({ theme }: props) => {
                   color: '#F5F6F6',
                 }}
               >
-                Hello There
+                Running
+              </div>
+            </div>
+          </div>
+          {/* new */}
+          <div>
+            <div
+              style={{
+                borderTop: '2px solid #7A3422',
+                width: 60,
+                margin: Width <= 786 ? '0 auto' : 'inherit',
+              }}
+            ></div>
+            <p style={{ color: theme.color }} className={styles.textTitle}>
+              My interest
+            </p>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: Width > 769 ? 'flex-start' : 'center',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: 10,
+              }}
+            >
+              <div
+                style={{
+                  background: '#7A3422',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: 'white',
+                }}
+              >
+                Development
               </div>
               <div
                 style={{
-                  background: '#597F51',
+                  background: '#7A3422',
                   padding: '4px 10px',
                   borderRadius: 3,
-                  color: '#F5F6F6',
+                  color: 'white',
                 }}
               >
-                Hello There
+                Devops
+              </div>
+              <div
+                style={{
+                  background: '#7A3422',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: 'white',
+                }}
+              >
+                Machine Learning
+              </div>
+            </div>
+          </div>
+          {/* ;; */}
+          <div>
+            <div
+              style={{
+                borderTop: '2px solid #80F1C0',
+                width: 60,
+                margin: Width <= 786 ? '0 auto' : 'inherit',
+              }}
+            ></div>
+            <p style={{ color: theme.color }} className={styles.textTitle}>
+              I'll love to work with
+            </p>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: Width > 769 ? 'flex-start' : 'center',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: 10,
+              }}
+            >
+              <div
+                style={{
+                  background: '#80F1C0',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: 'black',
+                }}
+              >
+                Web development
+              </div>
+              <div
+                style={{
+                  background: '#80F1C0',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: 'black',
+                }}
+              >
+                Devops
+              </div>
+              <div
+                style={{
+                  background: '#80F1C0',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: 'black',
+                }}
+              >
+                App development
+              </div>
+
+              <div
+                style={{
+                  background: '#80F1C0',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: 'black',
+                }}
+              >
+                Full-stack development
+              </div>
+              <div
+                style={{
+                  background: '#80F1C0',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: 'black',
+                }}
+              >
+                Heavy backend involved project
+              </div>
+              <div
+                style={{
+                  background: '#80F1C0',
+                  padding: '4px 10px',
+                  borderRadius: 3,
+                  color: 'black',
+                }}
+              >
+                Scratch project
               </div>
             </div>
           </div>

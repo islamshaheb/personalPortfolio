@@ -32,7 +32,6 @@ const LandingSection = ({ theme }: props) => {
         <div
           style={{
             textAlign: Width >= 769 ? 'inherit' : 'center',
-            width: '100%',
           }}
         >
           <img width={Width >= 400 ? 400 : '100%'} src={proPic} alt='failed to load' />
@@ -52,7 +51,7 @@ const LandingSection = ({ theme }: props) => {
               textAlign: Width >= 769 ? 'inherit' : 'center',
             }}
           >
-            Hello I'm Mojahid
+            Hello I'm Mojahidul Islam
           </div>
           <div
             style={{
@@ -61,11 +60,8 @@ const LandingSection = ({ theme }: props) => {
               textAlign: Width >= 769 ? 'inherit' : 'center',
             }}
           >
-            A full-stack web developer. I do my part in making the world a better place by making
-            the web open, fun and more useful. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Alias, impedit explicabo neque sequi temporibus corporis voluptates dolorem
-            dignissimos iste voluptatum a quidem debitis sapiente reiciendis aliquam fugiat maiores
-            consequatur sed?
+            A full-stack web developer.I'm really passionate to building new software to make life
+            easier than before.
           </div>
         </div>
       </div>

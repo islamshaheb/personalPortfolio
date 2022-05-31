@@ -54,8 +54,12 @@ const Footer = () => {
         <div
           style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', gap: 5 }}
         >
-          <GitHubIcon sx={{ color: theme.color, fontSize: 30 }} />
-          <LinkedInIcon sx={{ color: theme.color, fontSize: 30 }} />
+          <a target='_blank' href='https://github.com/islamshaheb' rel='noreferrer'>
+            <GitHubIcon sx={{ color: theme.color, fontSize: 30 }} />
+          </a>
+          <a target='_blank' href='https://www.linkedin.com/in/mojahidul-islam/' rel='noreferrer'>
+            <LinkedInIcon sx={{ color: theme.color, fontSize: 30 }} />
+          </a>
         </div>
       </div>
     </div>

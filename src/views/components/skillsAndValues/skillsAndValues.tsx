@@ -28,7 +28,7 @@ const SkillsAndValues = () => {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            gap: 15,
+            gap: 5,
           }}
         >
           <div>
@@ -60,7 +60,7 @@ const SkillsAndValues = () => {
                   background: theme.dark ? '#12EFEF' : '#544A8A',
                 }}
               >
-                Javascript
+                C++
               </div>
               <div
                 className={styles.tags}
@@ -69,7 +69,7 @@ const SkillsAndValues = () => {
                   background: theme.dark ? '#12EFEF' : '#544A8A',
                 }}
               >
-                Javascript
+                Python
               </div>{' '}
               <div
                 className={styles.tags}
@@ -78,8 +78,23 @@ const SkillsAndValues = () => {
                   background: theme.dark ? '#12EFEF' : '#544A8A',
                 }}
               >
-                Javascript
-              </div>{' '}
+                C
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className={styles.textTitle} style={{ color: theme.color }}>
+              Web
+            </p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 15,
+                flexWrap: 'wrap',
+                justifyContent: Width > 769 ? 'flex-start' : 'center',
+              }}
+            >
               <div
                 className={styles.tags}
                 style={{
@@ -87,8 +102,8 @@ const SkillsAndValues = () => {
                   background: theme.dark ? '#12EFEF' : '#544A8A',
                 }}
               >
-                Javascript
-              </div>{' '}
+                Express JS
+              </div>
               <div
                 className={styles.tags}
                 style={{
@@ -96,7 +111,184 @@ const SkillsAndValues = () => {
                   background: theme.dark ? '#12EFEF' : '#544A8A',
                 }}
               >
-                Javascript
+                Koa Js
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                React
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                Redux
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                Material UI
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                SCSS
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className={styles.textTitle} style={{ color: theme.color }}>
+              App
+            </p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 15,
+                flexWrap: 'wrap',
+                justifyContent: Width > 769 ? 'flex-start' : 'center',
+              }}
+            >
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                React Native
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className={styles.textTitle} style={{ color: theme.color }}>
+              Database
+            </p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 15,
+                flexWrap: 'wrap',
+                justifyContent: Width > 769 ? 'flex-start' : 'center',
+              }}
+            >
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                MongoDB
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                MySQL
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                SQlite
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className={styles.textTitle} style={{ color: theme.color }}>
+              Test
+            </p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 15,
+                flexWrap: 'wrap',
+                justifyContent: Width > 769 ? 'flex-start' : 'center',
+              }}
+            >
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                Jest
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className={styles.textTitle} style={{ color: theme.color }}>
+              DevOps(Learning)
+            </p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 15,
+                flexWrap: 'wrap',
+                justifyContent: Width > 769 ? 'flex-start' : 'center',
+              }}
+            >
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                AWS(EC2, Lamda, S3 bucket, Load balancing)
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                Jenkins
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                Nginx
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
+                Docker
               </div>
             </div>
           </div>
