@@ -63,14 +63,19 @@ const WorkExperience = () => {
 
             <div>
               <p className={styles.projectName} style={{ color: theme.color }}>
-                This is Role Name at{' '}
-                <a href='ww.com' style={{ color: '#359dfd', textDecoration: 'none' }}>
+                Software engineer at{' '}
+                <a
+                  href='https://www.ambalait.com/public/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
                   {' '}
-                  Name of company{' '}
+                  Ambala It{' '}
                 </a>
               </p>
               <p style={{ color: theme.color, fontSize: 16 }}>
-                Location -{' '}
+                Remote -{' '}
                 <i>
                   September 2021 to Present ({' '}
                   {currentExpTime / 12 >= 1 ? (
@@ -82,35 +87,8 @@ const WorkExperience = () => {
             </div>
           </div>
 
-          <div
-            style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 5 }}
-          >
-            <GitHubIcon sx={{ color: theme.color }} />
-
-            <a
-              style={{ color: theme.color, textDecoration: 'none' }}
-              href='https://imagecolorpicker.com/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Github
-            </a>
-          </div>
-
-          <a
-            style={{ color: '#359dfd', fontWeight: 500, textDecoration: 'none' }}
-            href='https://imagecolorpicker.com/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Live
-          </a>
-
           <p className={styles.allPara} style={{ color: theme.color, textAlign: 'justify' }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
-            cupiditate quae, ducimus totam, ea alias impedit iusto saepe labore in iure incidunt,
-            voluptas obcaecati culpa quas beatae fugit.
+            Joined as a full-stack web developer. Currently working on operation related stuff.
           </p>
           <div
             style={{
@@ -140,14 +118,71 @@ const WorkExperience = () => {
           <div style={{ display: showingMore ? 'inline-block' : 'none', paddingLeft: '6%' }}>
             <ul style={{ color: theme.color, paddingBottom: 10 }}>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
-                {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
+                Develop full notification system on Reactive Native
               </li>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
-                {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
+                Develop fully customizable admin site for cur selling company.
+              </li>
+              <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
+                Develop two car selling online site.
+                <ul>
+                  <li
+                    style={{
+                      color: theme.color,
+                      paddingBottom: 10,
+                      textAlign: 'justify',
+                      marginLeft: 25,
+                      marginTop: 10,
+                    }}
+                  >
+                    <a
+                      href='http://test.customer2.foyob.com/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      style={{ color: '#359dfd', textDecoration: 'none' }}
+                    >
+                      Website 1
+                    </a>
+                  </li>
+                  <li
+                    style={{
+                      color: theme.color,
+                      paddingBottom: 10,
+                      textAlign: 'justify',
+                      marginLeft: 25,
+                    }}
+                  >
+                    <a
+                      href='http://test.customer1.foyob.com/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      style={{ color: '#359dfd', textDecoration: 'none' }}
+                    >
+                      Website 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
+                Develop landing page for a car selling company
+                <ul></ul>
+                <li
+                  style={{
+                    color: theme.color,
+                    paddingBottom: 10,
+                    textAlign: 'justify',
+                    marginLeft: 25,
+                  }}
+                >
+                  <a
+                    href='https://.foyob.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    style={{ color: '#359dfd', textDecoration: 'none' }}
+                  >
+                    Landing Page
+                  </a>
+                </li>
               </li>
             </ul>
           </div>

@@ -66,7 +66,12 @@ const Education = () => {
                 BSc in computer science and engineering.
               </p>
               <div style={{ color: theme.color, fontSize: 16 }}>
-                <a href='ww.com' style={{ color: '#359dfd', textDecoration: 'none' }}>
+                <a
+                  href='http://www.uap-bd.edu/cse/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
                   {' '}
                   University of Asia Pacific{' '}
                 </a>
@@ -86,14 +91,14 @@ const Education = () => {
           <div style={{ paddingLeft: '6%' }}>
             <ul style={{ color: theme.color, paddingBottom: 10 }}>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
-                {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
+                Participated in ICPC preliminary regional, IDPC several times.
               </li>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
                 {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
+                Received University Scholarship for academic excellence in 2018-21
+              </li>
+              <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
+                Class Representative(CR)
               </li>
             </ul>
           </div>
@@ -117,7 +122,12 @@ const Education = () => {
                 Higher school certificate <i style={{ fontSize: 14 }}>(A level)</i>
               </p>
               <div style={{ color: theme.color, fontSize: 16 }}>
-                <a href='ww.com' style={{ color: '#359dfd', textDecoration: 'none' }}>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.abdurroufcollege.ac.bd/'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
                   Birshreshtha Munshi Abdur Rouf Public College
                 </a>
                 <p>
@@ -136,14 +146,7 @@ const Education = () => {
           <div style={{ paddingLeft: '6%' }}>
             <ul style={{ color: theme.color, paddingBottom: 10 }}>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
-                {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
-              </li>
-              <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
-                {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
+                Class captain
               </li>
             </ul>
           </div>
