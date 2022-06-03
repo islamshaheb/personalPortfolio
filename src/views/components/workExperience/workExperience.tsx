@@ -13,6 +13,7 @@ import { spawn } from 'child_process';
 import useWindowDimensions from '../useWindowDimensions/useWindowDimensions';
 const WorkExperience = () => {
   const [showingMore, setShowMore] = useState<boolean>(false);
+  const [showingMore2, setShowMore2] = useState<boolean>(false);
   const theme = useContext(ThemeContext);
   const { Width } = useWindowDimensions();
 
@@ -118,10 +119,10 @@ const WorkExperience = () => {
           <div style={{ display: showingMore ? 'inline-block' : 'none', paddingLeft: '6%' }}>
             <ul style={{ color: theme.color, paddingBottom: 10 }}>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
-                Develop full notification system on Reactive Native
+                Develop full notification system on React Native
               </li>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
-                Develop fully customizable admin site for cur selling company.
+                Develop fully customizable admin site for car selling company.
               </li>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
                 Develop two car selling online site.
@@ -165,25 +166,28 @@ const WorkExperience = () => {
               </li>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
                 Develop landing page for a car selling company
-                <ul></ul>
-                <li
-                  style={{
-                    color: theme.color,
-                    paddingBottom: 10,
-                    textAlign: 'justify',
-                    marginLeft: 25,
-                  }}
-                >
-                  <a
-                    href='https://.foyob.com/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    style={{ color: '#359dfd', textDecoration: 'none' }}
+                <ul>
+                  <li
+                    style={{
+                      color: theme.color,
+                      paddingBottom: 10,
+                      textAlign: 'justify',
+                      marginTop: 10,
+                      marginLeft: 25,
+                    }}
                   >
-                    Landing Page
-                  </a>
-                </li>
+                    <a
+                      href='https://foyob.com/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      style={{ color: '#359dfd', textDecoration: 'none' }}
+                    >
+                      Landing Page
+                    </a>
+                  </li>
+                </ul>
               </li>
+              <li>Deployed multiple app in AWS ec2</li>
             </ul>
           </div>
           <div
@@ -202,7 +206,7 @@ const WorkExperience = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              Typescript
             </div>
             <div
               className={styles.tags}
@@ -211,7 +215,7 @@ const WorkExperience = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              Node js (Express)
             </div>
             <div
               className={styles.tags}
@@ -220,8 +224,8 @@ const WorkExperience = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
-            </div>{' '}
+              React
+            </div>
             <div
               className={styles.tags}
               style={{
@@ -229,7 +233,52 @@ const WorkExperience = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              React Native
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              MongoDB
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              AWS
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Material UI
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Nginx
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Bit Bucket
             </div>
           </div>
         </div>
@@ -249,14 +298,18 @@ const WorkExperience = () => {
 
             <div>
               <p className={styles.projectName} style={{ color: theme.color }}>
-                This is Role Name at{' '}
-                <a href='ww.com' style={{ color: '#359dfd', textDecoration: 'none' }}>
-                  {' '}
-                  Name of company{' '}
+                Full Stack Engineer ( Intern ) at{' '}
+                <a
+                  href='https://springrain.io/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
+                  Spring Rain pvt. Ltd.
                 </a>
               </p>
               <p style={{ color: theme.color, fontSize: 16 }}>
-                Location -{' '}
+                Remote -{' '}
                 <i>
                   April 2021 to August ({' '}
                   {firstExpTime / 12 >= 1 ? (
@@ -268,35 +321,9 @@ const WorkExperience = () => {
             </div>
           </div>
 
-          <div
-            style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 5 }}
-          >
-            <GitHubIcon sx={{ color: theme.color }} />
-
-            <a
-              style={{ color: theme.color, textDecoration: 'none' }}
-              href='https://imagecolorpicker.com/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Github
-            </a>
-          </div>
-
-          <a
-            style={{ color: '#359dfd', fontWeight: 500, textDecoration: 'none' }}
-            href='https://imagecolorpicker.com/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Live
-          </a>
-
           <p style={{ color: theme.color, textAlign: 'justify' }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
-            cupiditate quae, ducimus totam, ea alias impedit iusto saepe labore in iure incidunt,
-            voluptas obcaecati culpa quas beatae fugit.
+            It was such a wonderful journey with spring IT Ltd. It was an internship in full-stack
+            web development for almost 4 months. Mainly I worked with Javascript (Node and React).
           </p>
           <div
             style={{
@@ -307,10 +334,10 @@ const WorkExperience = () => {
               cursor: 'pointer',
             }}
             onClick={() => {
-              setShowMore(!showingMore);
+              setShowMore2(!showingMore2);
             }}
           >
-            {showingMore ? (
+            {showingMore2 ? (
               <ArrowDropUpIcon
                 fontSize='large'
                 sx={{ color: '#359dfd', marginLeft: '-8px', fontSize: '50' }}
@@ -321,19 +348,76 @@ const WorkExperience = () => {
                 sx={{ color: '#359dfd', marginLeft: '-8px', fontSize: '50' }}
               />
             )}{' '}
-            <p style={{ color: '#359dfd' }}> {showingMore ? 'Hide' : 'Show More'}</p>
+            <p style={{ color: '#359dfd' }}> {showingMore2 ? 'Hide' : 'Show More'}</p>
           </div>
-          <div style={{ display: showingMore ? 'inline-block' : 'none', paddingLeft: '6%' }}>
+          <div style={{ display: showingMore2 ? 'inline-block' : 'none', paddingLeft: '6%' }}>
             <ul style={{ color: theme.color, paddingBottom: 10 }}>
               <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
-                {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
+                I and my team made a fully functional digital wallet system. For storing data we use
+                MongoDB. Its back-end part is made in Node and a front-end part is made in React.
+                <ul>
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'flex-start',
+                      gap: 5,
+                      marginTop: 10,
+                      marginLeft: 25,
+                    }}
+                  >
+                    <GitHubIcon sx={{ color: theme.color }} />
+
+                    <a
+                      style={{ color: '#359dfd', textDecoration: 'none' }}
+                      href='https://github.com/islamshaheb/Digital-Wallet'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      Github
+                    </a>
+                  </div>
+                </ul>
               </li>
-              <li style={{ color: theme.color, paddingBottom: 10, textAlign: 'justify' }}>
+              <li>
                 {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus modi
+                Built some small project like{' '}
+                <a
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                  href='https://github.com/islamshaheb/Digital-Wallet'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  OTP sender
+                </a>
+                ,{' '}
+                <a
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                  href='https://github.com/islamshaheb/The-Shawshank-Redemption-Movie-Review'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  The Shawshank Movie Review
+                </a>
+                ,{' '}
+                <a
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                  href='https://github.com/islamshaheb/Arithmatic-Calculator'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Arithmetic Calculator
+                </a>
+                ,{' '}
+                <a
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                  href='https://github.com/islamshaheb/Star-Pattern-Using-Javascript'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Star Pattern
+                </a>
+                .
               </li>
             </ul>
           </div>
@@ -362,7 +446,7 @@ const WorkExperience = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              Node js (Koa js)
             </div>
             <div
               className={styles.tags}
@@ -371,8 +455,8 @@ const WorkExperience = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
-            </div>{' '}
+              React
+            </div>
             <div
               className={styles.tags}
               style={{
@@ -380,7 +464,25 @@ const WorkExperience = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              Material UI
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Git
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Github
             </div>
           </div>
         </div>
