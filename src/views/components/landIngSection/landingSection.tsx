@@ -32,6 +32,7 @@ const LandingSection = ({ theme }: props) => {
         <div
           style={{
             textAlign: Width >= 769 ? 'inherit' : 'center',
+            margin: '0 auto',
           }}
         >
           <img width={Width >= 400 ? 400 : '100%'} src={proPic} alt='failed to load' />

@@ -11,7 +11,6 @@ const SkillsAndValues = () => {
   return (
     <div
       style={{
-        marginTop: 100,
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'flex-start',

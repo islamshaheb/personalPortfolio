@@ -42,10 +42,10 @@ const Projects = () => {
           <div
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
           >
-            <img src={profile} height={40} width={40} alt='not supported Images' />
+            {/* <img src={profile} height={40} width={40} alt='not supported Images' /> */}
 
             <div>
-              <p className={styles.projectName}>This is project Name</p>
+              <p className={styles.projectName}>Digital Wallet</p>
               <p style={{ color: theme.color, fontSize: 16 }}>2021</p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Projects = () => {
 
             <a
               style={{ color: theme.color, textDecoration: 'none' }}
-              href='https://imagecolorpicker.com/'
+              href='https://github.com/islamshaheb/Digital-Wallet'
               target='_blank'
               rel='noreferrer'
             >
@@ -66,7 +66,7 @@ const Projects = () => {
           </div>
 
           <a
-            style={{ color: '#359dfd', fontWeight: 500, textDecoration: 'none' }}
+            style={{ color: '#359dfd', fontWeight: 500, textDecoration: 'none', display: 'none' }}
             href='https://imagecolorpicker.com/'
             target='_blank'
             rel='noreferrer'
@@ -74,9 +74,10 @@ const Projects = () => {
             Live
           </a>
           <p style={{ color: theme.color, textAlign: 'justify' }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-            totam debitis nostrum est sapiente nobis ut illo vel repellat eveniet, adipisci autem
-            fuga delectus, blanditiis praesentium amet.
+            A fully functional digital wallet APIs. Consists of CRUD operation. Some functionalities
+            are Signup, Sign in, and Creating session. Verifying every action using token,
+            Transfer/deposit/withdraw money from the wallet. Send all transactions using the
+            Sendgrid adapter in PDF format. Able to purchase products.
           </p>
           <div
             style={{
@@ -103,7 +104,7 @@ const Projects = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              Node Js
             </div>
             <div
               className={styles.tags}
@@ -112,8 +113,8 @@ const Projects = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
-            </div>{' '}
+              MongoDB
+            </div>
             <div
               className={styles.tags}
               style={{
@@ -121,7 +122,7 @@ const Projects = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              Nginx
             </div>
           </div>
         </div>
@@ -137,10 +138,10 @@ const Projects = () => {
           <div
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
           >
-            <img src={profile} height={40} width={40} alt='not supported Images' />
+            {/* <img src={profile} height={40} width={40} alt='not supported Images' /> */}
 
             <div>
-              <p className={styles.projectName}>This is project Name</p>
+              <p className={styles.projectName}>Covid-19 Data visualization & Updated news</p>
               <p style={{ color: theme.color, fontSize: 16 }}>2021</p>
             </div>
           </div>
@@ -152,7 +153,7 @@ const Projects = () => {
 
             <a
               style={{ color: theme.color, textDecoration: 'none' }}
-              href='https://imagecolorpicker.com/'
+              href='https://github.com/islamshaheb/Covid_19/'
               target='_blank'
               rel='noreferrer'
             >
@@ -161,7 +162,7 @@ const Projects = () => {
           </div>
 
           <a
-            style={{ color: '#359dfd', fontWeight: 500, textDecoration: 'none' }}
+            style={{ color: '#359dfd', fontWeight: 500, textDecoration: 'none', display: 'none' }}
             href='https://imagecolorpicker.com/'
             target='_blank'
             rel='noreferrer'
@@ -169,9 +170,112 @@ const Projects = () => {
             Live
           </a>
           <p style={{ color: theme.color, textAlign: 'justify' }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero possimus commodi
-            totam debitis nostrum est sapiente nobis ut illo vel repellat eveniet, adipisci autem
-            fuga delectus, blanditiis praesentium amet.
+            A project to show Covid-19 affected people in the world. Here we have some specific
+            features to show data of Covid-19 affected person in Bangladesh district wise and
+            someone can post comment and one can reply and edit that thing.
+          </p>
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              gap: 8,
+              alignContent: 'center',
+            }}
+          >
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Python
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Django
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Bootstrap
+            </div>{' '}
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              SQlite
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Web scrapping (Beautiful Soap)
+            </div>
+          </div>
+        </div>{' '}
+        <div
+          className={theme.dark ? styles.boxDark : styles.boxLight}
+          style={{
+            background: theme.dark ? '#1f2937' : '#f7f7f7',
+            display: 'flex',
+            gap: 15,
+            flexDirection: 'column',
+          }}
+        >
+          <div
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
+          >
+            {/* <img src={profile} height={40} width={40} alt='not supported Images' /> */}
+
+            <div>
+              <p className={styles.projectName}>Uptime monitoring API</p>
+              <p style={{ color: theme.color, fontSize: 16 }}>2021</p>
+            </div>
+          </div>
+
+          <div
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 5 }}
+          >
+            <GitHubIcon sx={{ color: theme.color }} />
+
+            <a
+              style={{ color: theme.color, textDecoration: 'none' }}
+              href='https://github.com/islamshaheb/Uptime-Monitoring-API-using-raw-Node'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Github
+            </a>
+          </div>
+
+          <a
+            style={{ color: '#359dfd', fontWeight: 500, textDecoration: 'none', display: 'none' }}
+            href='https://imagecolorpicker.com/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Live
+          </a>
+          <p style={{ color: theme.color, textAlign: 'justify' }}>
+            An API that is continuously monitoring the state. If it found any mismatch with
+            expectation then it sent an alert to the user through email.
           </p>
           <div
             style={{
@@ -198,7 +302,7 @@ const Projects = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              Node (Express js)
             </div>
             <div
               className={styles.tags}
@@ -207,7 +311,92 @@ const Projects = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              MongoDB
+            </div>
+          </div>
+        </div>
+        <div
+          className={theme.dark ? styles.boxDark : styles.boxLight}
+          style={{
+            background: theme.dark ? '#1f2937' : '#f7f7f7',
+            display: 'flex',
+            gap: 15,
+            flexDirection: 'column',
+          }}
+        >
+          <div
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
+          >
+            {/* <img src={profile} height={40} width={40} alt='not supported Images' /> */}
+
+            <div>
+              <p className={styles.projectName}>Online Banking</p>
+              <p style={{ color: theme.color, fontSize: 16 }}>2019</p>
+            </div>
+          </div>
+
+          <div
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 5 }}
+          >
+            <GitHubIcon sx={{ color: theme.color }} />
+
+            <a
+              style={{ color: theme.color, textDecoration: 'none' }}
+              href='https://github.com/islamshaheb/Online_Banking'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Github
+            </a>
+          </div>
+
+          <a
+            style={{ color: '#359dfd', fontWeight: 500, textDecoration: 'none', display: 'none' }}
+            href='https://imagecolorpicker.com/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Live
+          </a>
+          <p style={{ color: theme.color, textAlign: 'justify' }}>
+            An online Banking platform for everyone who has just internet access. By this one can
+            easily transfer or withdraw money from his/her current place.
+          </p>
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              gap: 8,
+              alignContent: 'center',
+            }}
+          >
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Python
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Django
+            </div>
+            <div
+              className={styles.tags}
+              style={{
+                color: theme.dark ? '#540478' : '#F3F2F8',
+                background: theme.dark ? '#12EFEF' : '#544A8A',
+              }}
+            >
+              Bootstrap
             </div>{' '}
             <div
               className={styles.tags}
@@ -216,7 +405,7 @@ const Projects = () => {
                 background: theme.dark ? '#12EFEF' : '#544A8A',
               }}
             >
-              Javascript
+              SQlite
             </div>
           </div>
         </div>

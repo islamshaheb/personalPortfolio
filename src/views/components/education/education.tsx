@@ -1,32 +1,17 @@
 /** @format */
 
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from 'App';
 import styles from 'views/pages/homePage/homePage.module.css';
-import profile from 'assets/profile.jpg';
-import GitHubIcon from '@mui/icons-material/GitHub';
-// import { ReactComponent as ArrowDropUpIcon } from 'assets/ArrowDropUpIcon.svg';
-// import { ReactComponent as ArrowRightIcon } from 'assets/ArrowRightIcon.svg';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import clg from 'assets/clg.jpg';
+import uap from 'assets/uap.png';
 import useWindowDimensions from '../useWindowDimensions/useWindowDimensions';
 
 const Education = () => {
-  const [showingMore, setShowMore] = useState<boolean>(false);
   const { Width } = useWindowDimensions();
 
   const theme = useContext(ThemeContext);
-  const getMonthDifference = (startDate: Date, endDate: Date): number => {
-    return (
-      endDate.getMonth() -
-      startDate.getMonth() +
-      12 * (endDate.getFullYear() - startDate.getFullYear())
-    );
-  };
 
-  const firstExpTime = getMonthDifference(new Date('2021-04-01'), new Date('2021-08-01'));
-
-  const currentExpTime = getMonthDifference(new Date('2021-09-01'), new Date());
   return (
     <div style={{ display: 'flex', gap: '5%', flexWrap: 'wrap', width: '100%' }}>
       <div style={{ color: theme.color, width: Width > 768 ? '30%' : '100%' }}>
@@ -59,7 +44,13 @@ const Education = () => {
           <div
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
           >
-            <img src={profile} height={40} width={40} alt='not supported Images' />
+            <img
+              style={{ borderRadius: 2, objectFit: 'cover' }}
+              src={uap}
+              height={40}
+              width={40}
+              alt='not supported Images'
+            />
 
             <div>
               <p className={styles.projectName} style={{ color: theme.color }}>
@@ -76,7 +67,7 @@ const Education = () => {
                   University of Asia Pacific{' '}
                 </a>
                 <p>
-                  Dhaka,Bangladesh.<i>2017 - 2021</i>
+                  Dhaka,Bangladesh.<i> 2017 - 2021</i>
                 </p>
               </div>
             </div>
@@ -115,7 +106,13 @@ const Education = () => {
           <div
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
           >
-            <img src={profile} height={40} width={40} alt='not supported Images' />
+            <img
+              src={clg}
+              style={{ borderRadius: 2 }}
+              height={40}
+              width={40}
+              alt='not supported Images'
+            />
 
             <div>
               <p className={styles.projectName} style={{ color: theme.color }}>
@@ -131,7 +128,7 @@ const Education = () => {
                   Birshreshtha Munshi Abdur Rouf Public College
                 </a>
                 <p>
-                  Pilkhana ,Dhaka,Bangladesh.<i>2013 - 2015</i>
+                  Pilkhana ,Dhaka,Bangladesh.<i> 2013 - 2015</i>
                 </p>
               </div>
             </div>

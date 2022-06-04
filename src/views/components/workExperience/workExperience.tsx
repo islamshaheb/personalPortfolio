@@ -3,13 +3,11 @@
 import { useContext, useState } from 'react';
 import { ThemeContext } from 'App';
 import styles from 'views/pages/homePage/homePage.module.css';
-import profile from 'assets/profile.jpg';
+import springRain from 'assets/springrain.png';
+import ambala from 'assets/ambala.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
-// import { ReactComponent as ArrowDropUpIcon } from 'assets/ArrowDropUpIcon.svg';
-// import { ReactComponent as ArrowRightIcon } from 'assets/ArrowRightIcon.svg';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import { spawn } from 'child_process';
 import useWindowDimensions from '../useWindowDimensions/useWindowDimensions';
 const WorkExperience = () => {
   const [showingMore, setShowMore] = useState<boolean>(false);
@@ -60,7 +58,13 @@ const WorkExperience = () => {
           <div
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
           >
-            <img src={profile} height={40} width={40} alt='not supported Images' />
+            <img
+              style={{ objectFit: 'contain' }}
+              src={ambala}
+              height={40}
+              width={40}
+              alt='not supported Images'
+            />
 
             <div>
               <p className={styles.projectName} style={{ color: theme.color }}>
@@ -137,7 +141,7 @@ const WorkExperience = () => {
                     }}
                   >
                     <a
-                      href='http://test.customer2.foyob.com/'
+                      href='http://test.customer1.foyob.com/'
                       target='_blank'
                       rel='noopener noreferrer'
                       style={{ color: '#359dfd', textDecoration: 'none' }}
@@ -154,7 +158,7 @@ const WorkExperience = () => {
                     }}
                   >
                     <a
-                      href='http://test.customer1.foyob.com/'
+                      href='http://test.customer2.foyob.com/'
                       target='_blank'
                       rel='noopener noreferrer'
                       style={{ color: '#359dfd', textDecoration: 'none' }}
@@ -294,7 +298,13 @@ const WorkExperience = () => {
           <div
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
           >
-            <img src={profile} height={40} width={40} alt='not supported Images' />
+            <img
+              src={springRain}
+              height={40}
+              width={40}
+              style={{ objectFit: 'cover', color: 'black' }}
+              alt='not supported Images'
+            />
 
             <div>
               <p className={styles.projectName} style={{ color: theme.color }}>

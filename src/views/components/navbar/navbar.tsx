@@ -42,25 +42,16 @@ const Navbar = (props: props) => {
 
   return (
     <div>
-      <div style={{ display: 'none' }}>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, nostrum maiores distinctio
-        vero autem pariatur fuga nobis sit cupiditate quidem in id sunt natus neque fugit libero est
-        quaerat atque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique neque
-        voluptate eos quaerat laboriosam unde iusto, nisi quam amet impedit necessitatibus, tempora
-        doloribus est, cupiditate saepe aliquam! Ipsam, nisi quas!
-      </div>
-      <div
-        style={{
-          position: 'sticky',
-          top: 0,
-        }}
-      >
+      <div>
         <div
           style={{
-            height: Width <= 768 ? 70 : '20vh',
+            height: Width <= 768 ? 70 : '10vh',
             display: 'flex',
-            alignItems: 'center',
+            alignItems: 'flex-start',
             flexWrap: 'nowrap',
+            paddingTop: 20,
+            background: darkMode ? '#11182775' : '#ffffff80',
+            backdropFilter: 'blur(10px)',
           }}
         >
           <div

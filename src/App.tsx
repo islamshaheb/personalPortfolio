@@ -28,7 +28,11 @@ function App() {
     <ThemeContext.Provider value={theme}>
       <div style={{ background: theme.background, paddingInline: 10 }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <Navbar changeTheme={setTheme} />
+          <div style={{ visibility: 'hidden', height: Width >= 550 ? 40 : 20 }}></div>
+          <div style={{ position: 'sticky', top: 0 }}>
+            {' '}
+            <Navbar changeTheme={setTheme} />
+          </div>
           <BrowserRouter>
             <Routes>
               <Route path='/' element={<HomePage theme={theme} />} />

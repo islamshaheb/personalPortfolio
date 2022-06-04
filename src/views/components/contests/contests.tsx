@@ -46,14 +46,19 @@ const Contests = () => {
           <div
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 15 }}
           >
-            <img src={profile} height={40} width={40} alt='not supported Images' />
+            {/* <img src={profile} height={40} width={40} alt='not supported Images' /> */}
 
             <div>
               <p className={styles.projectName} style={{ color: theme.color }}>
                 Codeforces
               </p>
               <div style={{ color: theme.color, fontSize: 16 }}>
-                <a href='ww.com' style={{ color: '#359dfd', textDecoration: 'none' }}>
+                <a
+                  href='https://codeforces.com/profile/islamshaheb'
+                  target='_blank'
+                  rel='noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
                   {' '}
                   Profile{' '}
                 </a>
@@ -61,7 +66,7 @@ const Contests = () => {
             </div>
           </div>
 
-          <div style={{ marginLeft: 55 }}>
+          <div style={{ marginLeft: 20 }}>
             <div
               style={{
                 display: 'flex',
@@ -73,7 +78,7 @@ const Contests = () => {
               <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
                 Total problem solve:
               </p>
-              <p style={{ color: theme.color }}>400</p>
+              <p style={{ color: theme.color }}>370</p>
             </div>
             <div
               style={{
@@ -86,7 +91,7 @@ const Contests = () => {
               <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
                 Participated in contests:
               </p>
-              <p style={{ color: theme.color }}>100</p>
+              <p style={{ color: theme.color }}>115</p>
             </div>
           </div>
           {/* NEw div */}
@@ -99,13 +104,17 @@ const Contests = () => {
               marginTop: 17,
             }}
           >
-            <img src={profile} height={40} width={40} alt='not supported Images' />
             <div>
               <p className={styles.projectName} style={{ color: theme.color }}>
-                Codeforces
+                LeetCode
               </p>
               <div style={{ color: theme.color, fontSize: 16 }}>
-                <a href='ww.com' style={{ color: '#359dfd', textDecoration: 'none' }}>
+                <a
+                  href='https://leetcode.com/IslamShaheb/'
+                  target='_blank'
+                  rel='noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
                   {' '}
                   Profile{' '}
                 </a>
@@ -113,7 +122,7 @@ const Contests = () => {
             </div>
           </div>
 
-          <div style={{ marginLeft: 55 }}>
+          <div style={{ marginLeft: 20 }}>
             <div
               style={{
                 display: 'flex',
@@ -125,7 +134,7 @@ const Contests = () => {
               <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
                 Total problem solve:
               </p>
-              <p style={{ color: theme.color }}>400</p>
+              <p style={{ color: theme.color }}>111</p>
             </div>
             <div
               style={{
@@ -138,7 +147,186 @@ const Contests = () => {
               <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
                 Participated in contests:
               </p>
-              <p style={{ color: theme.color }}>100</p>
+              <p style={{ color: theme.color }}>1</p>
+            </div>
+          </div>
+          {/* NEw div */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+              gap: 15,
+              marginTop: 17,
+            }}
+          >
+            <div>
+              <p className={styles.projectName} style={{ color: theme.color }}>
+                HackerRank & GeeksForGeeks
+              </p>
+              <div style={{ color: theme.color, fontSize: 16 }}>
+                <a
+                  href='https://www.hackerrank.com/islamshaheb'
+                  target='_blank'
+                  rel='noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
+                  HackerRank
+                </a>
+              </div>
+              <div style={{ color: theme.color, fontSize: 16 }}>
+                <a
+                  href='https://auth.geeksforgeeks.org/user/islamshaheb5/profile'
+                  target='_blank'
+                  rel='noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
+                  GeeksForGeeks
+                </a>
+              </div>
+            </div>
+          </div>
+          <div style={{ marginLeft: 20 }}>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+                gap: 5,
+              }}
+            >
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                Total problem solve:
+              </p>
+              <p style={{ color: theme.color }}>231</p>
+            </div>
+            <div
+              style={{
+                display: 'none',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+                gap: 5,
+              }}
+            >
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                Participated in contests:
+              </p>
+              <p style={{ color: theme.color }}>1</p>
+            </div>
+          </div>
+          {/* NEw div */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+              gap: 15,
+              marginTop: 17,
+            }}
+          >
+            <div>
+              <p className={styles.projectName} style={{ color: theme.color }}>
+                Uva online judge
+              </p>
+              <div style={{ color: theme.color, fontSize: 16 }}>
+                <a
+                  href='https://uhunt.onlinejudge.org/id/914893'
+                  target='_blank'
+                  rel='noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
+                  {' '}
+                  Profile{' '}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div style={{ marginLeft: 20 }}>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+                gap: 5,
+              }}
+            >
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                Total problem solve:
+              </p>
+              <p style={{ color: theme.color }}>118</p>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+                gap: 5,
+              }}
+            >
+              <p
+                style={{
+                  color: theme.dark ? '#B69473' : '#7F331F',
+                  fontWeight: 500,
+                  display: 'none',
+                }}
+              >
+                Participated in contests:
+                <p style={{ color: theme.color }}>1</p>
+              </p>
+            </div>
+          </div>
+          {/* NEw div */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+              gap: 15,
+              marginTop: 17,
+            }}
+          >
+            <div>
+              <p className={styles.projectName} style={{ color: theme.color }}>
+                CodeChef
+              </p>
+              <div style={{ color: theme.color, fontSize: 16 }}>
+                <a
+                  href='https://www.codechef.com/users/islamshaheb'
+                  target='_blank'
+                  rel='noreferrer'
+                  style={{ color: '#359dfd', textDecoration: 'none' }}
+                >
+                  {' '}
+                  Profile{' '}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div style={{ marginLeft: 20 }}>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+                gap: 5,
+              }}
+            >
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                Total problem solve:
+              </p>
+              <p style={{ color: theme.color }}>111</p>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+                gap: 5,
+              }}
+            >
+              <p style={{ color: theme.dark ? '#B69473' : '#7F331F', fontWeight: 500 }}>
+                3 stars (***)
+              </p>
             </div>
           </div>
         </div>
