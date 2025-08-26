@@ -278,6 +278,15 @@ const SkillsAndValues = () => {
                   background: theme.dark ? '#12EFEF' : '#544A8A',
                 }}
               >
+                Jenkins Pipeline (Wrote multiple scripts )
+              </div>
+              <div
+                className={styles.tags}
+                style={{
+                  color: theme.dark ? '#540478' : '#F3F2F8',
+                  background: theme.dark ? '#12EFEF' : '#544A8A',
+                }}
+              >
                 Nginx
               </div>
               <div

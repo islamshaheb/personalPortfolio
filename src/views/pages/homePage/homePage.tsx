@@ -19,7 +19,9 @@ const HomePage = ({ theme }: props) => {
       <div style={{ display: 'flex', flexDirection: 'column', gap: 60, paddingBottom: 50 }}>
         <MoreAboutMe theme={theme} />
         <SkillsAndValues />
-        <Projects /> <WorkExperience /> <Education />
+        <WorkExperience />
+        <Projects />
+        <Education />
         <Contests />
         <Footer />
       </div>
