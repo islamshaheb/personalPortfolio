@@ -36,6 +36,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path='/' element={<HomePage theme={theme} />} />
+              <Route path='/personalPortfolio' element={<HomePage theme={theme} />} />
             </Routes>
           </BrowserRouter>
         </div>
